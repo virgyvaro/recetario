@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/pulse/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Courgette&family=Yatra+One&display=swap"
+        rel="stylesheet">
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Recetario</title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <img src="https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434_960_720.png" alt="receta" class="receta">
+        <h1 class="display-4 text-warning ml-5">Recetario</h1>
+        <!-- <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Domingo <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Lunes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Martes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Miércoles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Jueves</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Viernes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Sábado</a>
+                </li>
+            </ul>
+        </div> -->
+    </nav>
+
+    <!-- Hero -->
+    <div class="jumbotron fondo">
+        <h2 class="display-4 text-center text-success">Encuentra tus recetas para cada día de la semana</h2>
+        <hr class="my-4">
+        <h4 class="text-center">Fáciles de hacer y de gran valor nutricional</h4>
+    </div>
+
+    <!-- Main -->
+    <div class="container mt-5 col-sm-12 col-md-6">
+        <h2 class="text-center text-light display-4">Selecciona el día para visualizar la receta</h2>
+        <div class="row mt-5">
+            <!-- Botones para llamar al modal -->
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#domingo">
+                Domingo
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#lunes">
+                Lunes
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#martes">
+                Martes
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#miercoles">
+                Miércoles
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#jueves">
+                Jueves
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light" data-toggle="modal"
+                data-target="#viernes">
+                Viernes
+            </button>
+            <button type="button" class="btn btn-block bg-secondary text-light mb-5" data-toggle="modal"
+                data-target="#sabado">
+                Sábado
+            </button>
+        </div>
+    </div>
+
+    <!-- Modales de los botones -->
+    <!-- Modal Pozole -->
+    <div class="modal fade" id="domingo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Pozole Rojo</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.pixabay.com/photo/2017/10/05/18/08/pozole-2820341_960_720.jpg"
+                        class="img-fluid" alt="pozole">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">6 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>600 gramos de maíz precocido, cacahuazintle</li>
+                                <li>3 dientes de ajos, pelados</li>
+                                <li>1 cebolla, un cuarto en trozo para el maíz, el resto finamente picado</li>
+                                <li>3 cucharadas de sal</li>
+                                <li>1 kg de carne de cerdo (maciza)</li>
+                                <li>5 chiles guajillos, desvenados</li>
+                                <li>5 chiles anchos, desvenados</li>
+                                <li>5 pimientas gruesas</li>
+                                <li>5 rábanos, lavar, desinfectar y secar. Cortados en rodajas</li>
+                                <li>1/4 taza de lechuga romana, lavar, desinfectar y secar. Finamente cortada</li>
+                                <li>10 limones</li>
+                                <li>1/2 taza de crema ácida</li>
+                                <li>10 tostadas</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>En una olla mediana, cueza el maíz junto con el ajo, la cebolla, la carne y la sal,
+                                    hasta que el maíz y la carne estén bien cocida.</li>
+                                <li>En una olla pequeña, suaviza los chiles en agua caliente por 5 minutos y muélelos en
+                                    la licuadora con un poco de agua. Agrega esa pasta al caldo del maíz y la carne.
+                                </li>
+                                <li>Retira la carne, deshébrala finamente.</li>
+                                <li>Revisa la cocción del maíz y sazona.</li>
+                                <li>Sirve la carne y las guarniciones.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Ensalada de atún con piña y ajonjoli -->
+    <div class="modal fade" id="lunes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Ensalada de Atún con Piña y Ajonjolí</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/28237/th5-640x426-28401.jpg"
+                        class="img-fluid" alt="ensalada">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">4 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>1/2 taza de jugo de limón</li>
+                                <li>1/2 taza de aceite de ajonjolí</li>
+                                <li>1/2 taza de aceite puro de canola</li>
+                                <li>4 cucharadas de miel de abeja</li>
+                                <li>1 pizca de sal</li>
+                                <li>1 pizca de pimienta</li>
+                                <li>2 tazas de atún fresco, cortados en cubos medianos</li>
+                                <li>1 aguacate, cortado en gajos</li>
+                                <li>1 taza de lechuga italiana, verde y morada</li>
+                                <li>1 taza de lechuga rosetta</li>
+                                <li>2 cucharadas de ajonjolí negro</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>Para la vinagreta, licúa el jugo del limón, el aceite de ajonjolí, el aceite de canola, la miel, la sal y la pimienta hasta que quede una mezcla homogénea. Reserva.</li>
+                                <li>En un bowl mezcla el atún natural, con la piña, el aguacate y adereza con la vinagreta perfectamente bien para que obtengan un color brillante.</li>
+                                <li>Sirve la preparación del bowl en un plato intercalando con las lechugas frescas. Agrega un poco de ajonjolí para terminar.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Rollitos de Pollo en Salsa de Poblano -->
+    <div class="modal fade" id="martes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Rollitos de Pollo en Salsa de Poblano</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn7.kiwilimon.com/recetaimagen/29843/31772.jpg"
+                        class="img-fluid" alt="rollitos de pollo">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">4 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>2 cucharadas de aceite vegetal, para relleno</li>
+                                <li>2 cucharadas de ajo, finamente picado, para relleno</li>
+                                <li>1/2 taza de cebolla, finamente picada, para relleno</li>
+                                <li>1/4 taza de zanahoria, cortada en tiritas, para relleno</li>
+                                <li>1/4 taza de brocóli, cortado en árboles pequeños, para relleno</li>
+                                <li>1/4taza de calabazas, cortada en tiras, para relleno</li>
+                                <li>1/4 taza de champiñón, para relleno</li>
+                                <li>1 pizca de sal y pimiento, para relleno</li>
+                                <li>4 pechugas de pollo, aplanadas (150g c/u) o en milanesas</li>
+                                <li>1 taza de queso Oaxaca, para la salsa</li>
+                                <li>1taza de crema para batir, para la salsa</li>
+                                <li>1/4 taza de caldo de verduras, para la salsa</li>
+                                <li>190 gramos de queso crema, para la salsa</li>
+                                <li>1 pizca de sal</li>
+                                <li>al gusto de elotito, para decorar</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>Calienta una sartén con el aceite y cocina el ajo y la cebolla. Agrega la zanahoria, el brócoli, la calabaza y los champiñones. Cocina 10 minutos o hasta que los líquidos se reduzcan. Sazona con sal y pimienta.</li>
+                                <li>Sobre una tabla extiende las pechugas de pollo, rellena con la preparación anterior, enrolla y cierra con palillos, sazona y coloca los rollos en una sartén caliente con aceite, cocina los rollos hasta que doren. Reserva.</li>
+                                <li>Para la salsa, licúa el que so Oaxaca con el chile poblano, la crema, el caldo y un poco de sal.</li>
+                                <li>Cocina la salsa en una ollita durante 10 minutos. Sirve la pechuga bañada con la salsa y decora con elotitos.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Bisteces en Salsa Morita -->
+    <div class="modal fade" id="miercoles" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Bisteces en Salsa Morita</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/37653/47692.jpg"
+                        class="img-fluid" alt="Bistec en morita">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">4 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>1/2 cebolla, para la salsa</li>
+                                <li>1 diente de ajo, para la salsa</li>
+                                <li>500 gramos de tomate verde, para la salsa</li>
+                                <li>5 chiles morita, remojados, para la salsa</li>
+                                <li>1 cucharadita de comino, para la salsa</li>
+                                <li>1 cucharadita de pimienta, para la salsa</li>
+                                <li>al gusto de sal, para la salsa</li>
+                                <li>1 taza de caldo de pollo, para la salsa</li>
+                                <li>al gusto de aceite vegetal</li>
+                                <li>1 taza de cebolla, fileteada</li>
+                                <li>500 gramos de bistec de res, cortados en tiritas</li>
+                                <li>1 cucharada de aceite vegetal</li>
+                                <li>1 taza de nopal, cocidos y cortados en tiritas</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>En un comal asa la cebolla, el ajo, los tomates y el chile morita. Reserva.</li>
+                                <li>Licúa la cebolla, el ajo, los tomates, el chile morita, la pimienta y la sal. Reserva.</li>
+                                <li>En una sartén a fuego medio agrega aceite, la cebolla, los bisteces sazona con sal y pimienta, cuando se coccinen agrega la salsa y cocina por 10 minutos agrega los nopales, cocina por 5 minutos más.</li>
+                                <li>Sirve sobre un plato extendido y acompaña de arroz blanco.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Spaguetti Integral a la Crema Ligero -->
+    <div class="modal fade" id="jueves" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Spaguetti Integral a la Crema Ligero</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/37519/47408.jpg"
+                        class="img-fluid" alt="Spaguetti">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">2 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>2 litros de agua, caliente</li>
+                                <li>al gusto de sal y pimienta</li>
+                                <li>1 paquete de spaguetti integral de 200 gramos</li>
+                                <li>suficiente de aceite en aerosol</li>
+                                <li>1 taza de pechuga de pavo</li>
+                                <li>1 taza de crema, baja en grasa</li>
+                                <li>suficiente de perejil, finamente picado, para decorar</li>
+                                <li>suficiente de verdura, al vapor, para acompañar</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>En una olla caliente el agua y cuando suelte el hervor agregue la ssal, espere a que recupere temperatura, es decir, que vuelva a hervir y agrega la pasta spaguetti integral, cocine 9 minutos. Escurra y reserve.</li>
+                                <li>En un sartén profundo rocía el aceite en aerosol y cocina el jamón de pechuga de pavo hasta que se dore ligeramente, añade el spaguetti integral y la crema baja en grasa, mezcla hasta icorporar perfectamente.</li>
+                                <li>Sirva caliente, decora con perejil y acompaña con verduras al vapor.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Spaguetti Integral a la Crema Ligero -->
+    <div class="modal fade" id="jueves" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Spaguetti Integral a la Crema Ligero</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/37519/47408.jpg"
+                        class="img-fluid" alt="Spaguetti">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">2 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>2 litros de agua, caliente</li>
+                                <li>al gusto de sal y pimienta</li>
+                                <li>1 paquete de spaguetti integral de 200 gramos</li>
+                                <li>suficiente de aceite en aerosol</li>
+                                <li>1 taza de pechuga de pavo</li>
+                                <li>1 taza de crema, baja en grasa</li>
+                                <li>suficiente de perejil, finamente picado, para decorar</li>
+                                <li>suficiente de verdura, al vapor, para acompañar</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>En una olla caliente el agua y cuando suelte el hervor agregue la ssal, espere a que recupere temperatura, es decir, que vuelva a hervir y agrega la pasta spaguetti integral, cocine 9 minutos. Escurra y reserve.</li>
+                                <li>En un sartén profundo rocía el aceite en aerosol y cocina el jamón de pechuga de pavo hasta que se dore ligeramente, añade el spaguetti integral y la crema baja en grasa, mezcla hasta icorporar perfectamente.</li>
+                                <li>Sirva caliente, decora con perejil y acompaña con verduras al vapor.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Sopa Azteca -->
+    <div class="modal fade" id="viernes" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Sopa Azteca</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/37598/47585.jpg"
+                        class="img-fluid" alt="Sopa Azteca">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">6 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>1/2 taza de cebolla, en trozos grandes, para el caldo</li>
+                                <li>1 diente de ajo, entero, para el caldo</li>
+                                <li>1 1/2 taza de jitomates, en cuartos, para el caldo</li>
+                                <li>2 chiles pasilla, sin venas ni semillas, para el caldo</li>
+                                <li>2 chiles guajillos, sin venas ni semillas, para el caldo</li>
+                                <li>2 tortillas</li>
+                                <li>4 tazas de consomé, para el caldo</li>
+                                <li>1 rama de epazote, para el caldo</li>
+                                <li>sal y pimienta al gusto</li>
+                                <li>2 tazas de tortilla, en tiritas, para decorar</li>
+                                <li>suficiente de aceite vegetal</li>
+                                <li>al gusto de queso Oaxaca, desmenuzado, para decorar</li>
+                                <li>al gusto de crema ácida, para decorar</li>
+                                <li>al gusto de chile pasilla, en rebanadas y frito, para decorar</li>
+                                <li>al gusto de chicharrón y aguacate, en trozos pequeños, para decorar</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>En una olla coloca una cucharada de aceite, la cebolla, el ajo y el jitomate, cocina por 5 minutos y agrega los chiles, la tortilla, el caldo y licua.</li>
+                                <li>Regresa al fuego, agrega el epazote, sal, pimienta y cocina por 15 minutos.</li>
+                                <li>En una olla con aceite caliente fríe las tortillas por 5 minutos o hasta que estén doradas a fuego medio. Reserva sobre un plato con papel absorbente.</li>
+                                <li>Sirve el caldo sobre un plato sopero y decora con las torillas fritas, una cucharada de crema ácida, el queso Oaxaca, los cuadritos de aguacate, el chicharrón y el chile en rodajas frito. Disfruta con una deliciosa naranjada.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Flan de Chongos Zamoranos -->
+    <div class="modal fade" id="sabado" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <!-- Sombrea el fondo -->
+        <div class="modal-dialog modal-lg" role="document">
+            <!-- Empieza la caja del modal -->
+            <div class="modal-content">
+                <!-- cabeza -->
+                <div class="modal-header bg-success text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">Flan de Chongos Zamoranos</h5>
+                    <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <!-- Cuerpo -->
+                <div class="modal-body">
+                    <img src="https://cdn.kiwilimon.com/recetaimagen/36974/46319.jpg"
+                        class="img-fluid" alt="Flan">
+                </div>
+                <!-- Pie -->
+                <div class="modal-footer">
+                    <div class="col-12">
+                        <div class="text-justify">
+                            <p class="float-right">8 porciones</p>
+                            <br>
+                            <p class="text-success">
+                                <b>Ingredientes:</b>
+                            </p>
+                            <ul>
+                                <li>1 taza de azúcar</li>
+                                <li>1/2 taza de leche condensada</li>
+                                <li>3/4 taza de leche evaporada</li>
+                                <li>1 taza de queso crema</li>
+                                <li>5 huevos</li>
+                                <li>1 taza de chongo zamorano</li>
+                                <li>1 cucharada de fécula de maíz</li>
+                                <li>1 cucharadita de escencia de vainilla</li>
+                                <li>suficiente de oblea con cajeta, para decorar</li>
+                                <li>suficiente de palanqueta de cacahuate, para decorar</li>
+                            </ul>
+                            <p class="text-success">
+                                <b>Preparación:</b> 
+                            </p>
+                            <ul>
+                                <li>Para el caramelo, en un sartén derrite el azúcar a fuego medio por aproximadamente 10 minutos y luego vierte en un molde para flan. Deja enfriar atemperatura ambiente.</li>
+                                <li>Precalienta el horno a 190°C.</li>
+                                <li>Para el flan, licúa la leche condensada con la leche evaporada, el queso crema, el huevo, los chongos zamoranos, la fécula de maíz y la vainilla.</li>
+                                <li>Vierte la mezcla en el molde y tápalo con papel aluminio. Hornea a baño maría por 50 minutos a 190°C. Deja enfriar 30 minutos y refrigera 1 hora.</li>
+                                <li>Desmolda el flan y decora con las obleas y tocitos de palanqueta. Disfruta.</li>
+                            </ul>
+                            <button type="button" class="btn btn-danger float-right"
+                                data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer py-1 bg-primary text-center">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-3 mt-2">
+                    <i class="fas fa-utensils fa-2x icon"></i>
+                    <span class="text-warning letra">Recetario</span>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-2">
+                    <i class="fas fa-map-pin fa-2x icon"></i>
+                    <span class="letra text-warning">Calzada Vallejo No.116, Nueva Patera</span>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-2">
+                    <i class="fab fa-whatsapp-square fa-2x icon"></i>
+                    <span class="ml-2 letra text-warning">55 - 21 - 80 - 66 - 71</span>
+                </div>
+                <div class="col-sm-12 col-md-3 mt-2">
+                    <i class="fab fa-instagram-square fa-2x icon"></i>
+                    <span>
+                        <a href="https://www.instagram.com/?hl=es" class="letra text-warning ml-1"
+                            target="_blank">Instagram</a>
+                    </span>
+                </div>
+                <div class="container-fluid col-sm-12 col-md-6 mt-4">
+                    <p class="text-warning">
+                        VAROVI 2021
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<!-- JS Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+<!-- JS Bootswatch -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- JS Externo -->
+<script src="../js/app.js"></script>
+
+</html>
